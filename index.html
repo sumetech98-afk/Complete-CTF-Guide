@@ -1,0 +1,810 @@
+<!-- ===== CTF COMPLETE GUIDE - CYBERSUME FULL SCREEN BLACK EDITION ===== -->
+<!-- Isko Blogger Post Editor mein HTML mode mein paste karein -->
+
+<style>
+    /* ===== FULL SCREEN WRAPPER ===== */
+    .cyber-post-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 30px 40px 50px !important;
+        background: #000000 !important;
+        color: #ffffff;
+        border-radius: 0 !important;
+        box-sizing: border-box;
+        min-height: 100vh;
+    }
+    
+    @media (max-width: 1200px) {
+        .cyber-post-wrapper { padding: 25px 35px 45px !important; }
+    }
+    @media (max-width: 992px) {
+        .cyber-post-wrapper { padding: 22px 30px 40px !important; }
+    }
+    @media (max-width: 768px) {
+        .cyber-post-wrapper { padding: 18px 22px 35px !important; }
+    }
+    @media (max-width: 600px) {
+        .cyber-post-wrapper { padding: 15px 18px 30px !important; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper { padding: 12px 14px 25px !important; }
+    }
+    
+    .cyber-content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    /* ===== POST HEADER ===== */
+    .post-header-cyber {
+        margin-bottom: 35px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid rgba(0, 255, 136, 0.1);
+        text-align: center;
+    }
+    
+    .post-badge {
+        display: inline-block;
+        padding: 6px 26px;
+        background: rgba(0, 255, 136, 0.08);
+        border: 1px solid #00ff88;
+        border-radius: 50px;
+        color: #00ff88;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .post-title-cyber {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 1.15;
+        color: #ffffff !important;
+        margin: 12px 0 18px;
+        letter-spacing: -0.5px;
+        text-align: center;
+    }
+    
+    .post-title-cyber strong {
+        color: #ffcc00;
+    }
+    
+    .post-description {
+        color: #b0b8c8;
+        font-size: 17px;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    @media (max-width: 992px) {
+        .post-title-cyber { font-size: 30px; }
+    }
+    @media (max-width: 768px) {
+        .post-title-cyber { font-size: 24px; }
+        .post-description { font-size: 15px; }
+    }
+    @media (max-width: 480px) {
+        .post-title-cyber { font-size: 20px; }
+    }
+    
+    /* ===== HEADINGS ===== */
+    .cyber-post-wrapper h2 {
+        color: #ffffff !important;
+        font-size: 26px;
+        font-weight: 800;
+        margin-top: 40px;
+        margin-bottom: 16px;
+        border-left: 5px solid #ffcc00;
+        padding-left: 18px;
+        line-height: 1.3;
+    }
+    
+    .cyber-post-wrapper h3 {
+        color: #00ff88 !important;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 25px 0 12px;
+    }
+    
+    .cyber-post-wrapper h4 {
+        color: #ffcc00 !important;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 20px 0 10px;
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper h2 { font-size: 22px; padding-left: 14px; }
+        .cyber-post-wrapper h3 { font-size: 18px; }
+        .cyber-post-wrapper h4 { font-size: 15px; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper h2 { font-size: 19px; padding-left: 12px; margin-top: 30px; }
+        .cyber-post-wrapper h3 { font-size: 16px; }
+        .cyber-post-wrapper h4 { font-size: 14px; }
+    }
+    
+    /* ===== PARAGRAPHS ===== */
+    .cyber-post-wrapper p {
+        color: #b0b8c8 !important;
+        font-size: 17px;
+        line-height: 1.9;
+        margin: 14px 0 18px;
+    }
+    .cyber-post-wrapper p strong { color: #ffcc00; }
+    @media (max-width: 768px) { .cyber-post-wrapper p { font-size: 16px; line-height: 1.8; } }
+    @media (max-width: 480px) { .cyber-post-wrapper p { font-size: 15px; line-height: 1.7; margin: 12px 0 14px; } }
+    
+    /* ===== LISTS ===== */
+    .cyber-post-wrapper ul, .cyber-post-wrapper ol {
+        color: #b0b8c8 !important;
+        font-size: 16px;
+        line-height: 2.2;
+        padding-left: 0;
+        margin: 12px 0 18px;
+        list-style: none;
+    }
+    .cyber-post-wrapper ul li, .cyber-post-wrapper ol li {
+        color: #b0b8c8 !important;
+        margin-bottom: 3px;
+        padding-left: 26px;
+        position: relative;
+    }
+    .cyber-post-wrapper ul li::before {
+        content: "▸";
+        color: #ffcc00;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .cyber-post-wrapper ol {
+        counter-reset: item;
+    }
+    .cyber-post-wrapper ol li {
+        counter-increment: item;
+        padding-left: 32px;
+    }
+    .cyber-post-wrapper ol li::before {
+        content: counter(item) ".";
+        color: #ffcc00;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper ul, .cyber-post-wrapper ol { font-size: 15px; line-height: 2; }
+        .cyber-post-wrapper ul li { padding-left: 22px; }
+        .cyber-post-wrapper ol li { padding-left: 28px; }
+    }
+    
+    /* ===== CODE BLOCKS ===== */
+    .code-block {
+        margin: 12px 0 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #0a0a0a;
+        border: 1px solid rgba(0, 255, 136, 0.06);
+    }
+    .code-header {
+        background: #0d0d0d;
+        padding: 8px 18px;
+        border-bottom: 1px solid rgba(0, 255, 136, 0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .code-header span:first-child {
+        color: #ffcc00;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .code-header span:last-child {
+        color: #6a7290;
+        font-size: 11px;
+    }
+    .code-block pre {
+        background: #000000;
+        padding: 18px 22px;
+        border-radius: 0;
+        overflow-x: auto;
+        margin: 0;
+        border: none;
+    }
+    .code-block pre code {
+        color: #b0b8c8;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        line-height: 1.8;
+        background: transparent;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    .code-block pre code .cmd { color: #00ff88; }
+    .code-block pre code .flag { color: #ffcc00; }
+    .code-block pre code .target { color: #00d9ff; }
+    .code-block pre code .comment { color: #6a7290; font-style: italic; }
+    .code-block pre code .var { color: #ff6b6b; }
+    .code-block pre code .string { color: #00d9ff; }
+    @media (max-width: 480px) {
+        .code-block pre { padding: 14px 14px; }
+        .code-block pre code { font-size: 12px; line-height: 1.7; }
+        .code-header { padding: 6px 14px; }
+        .code-header span:first-child { font-size: 12px; }
+    }
+    
+    /* ===== TABLE ===== */
+    .cyber-post-wrapper table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #0a0a0a;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 255, 136, 0.06);
+        margin: 15px 0 22px;
+        font-size: 14px;
+    }
+    .cyber-post-wrapper table thead tr { background: #ffcc00; }
+    .cyber-post-wrapper table thead tr th {
+        padding: 12px 18px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 14px;
+        color: #000000;
+    }
+    .cyber-post-wrapper table tbody tr { border-bottom: 1px solid rgba(0, 255, 136, 0.03); }
+    .cyber-post-wrapper table tbody tr:last-child { border-bottom: none; }
+    .cyber-post-wrapper table tbody tr td {
+        padding: 10px 18px;
+        color: #b0b8c8;
+        font-size: 14px;
+    }
+    @media (max-width: 768px) {
+        .cyber-post-wrapper table { font-size: 13px; }
+        .cyber-post-wrapper table thead tr th { padding: 8px 12px; font-size: 12px; }
+        .cyber-post-wrapper table tbody tr td { padding: 8px 12px; font-size: 12px; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper table { font-size: 12px; }
+        .cyber-post-wrapper table thead tr th { padding: 6px 10px; font-size: 11px; }
+        .cyber-post-wrapper table tbody tr td { padding: 6px 10px; font-size: 11px; }
+    }
+    
+    /* ===== FEATURED BOX ===== */
+    .featured-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 25px;
+        background: #0a0a0a;
+        border: 1px solid rgba(0, 255, 136, 0.08);
+        border-radius: 14px;
+        padding: 22px 28px;
+        margin: 20px 0 30px;
+        justify-content: center;
+    }
+    .featured-box .featured-image img {
+        max-width: 160px;
+        height: auto;
+        border-radius: 12px;
+        border: 2px solid #ffcc00;
+        transition: 0.3s;
+    }
+    .featured-box .featured-image img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 30px rgba(255, 204, 0, 0.15);
+    }
+    .featured-box .featured-cta { flex: 1; text-align: center; }
+    .featured-box .featured-cta p { color: #b0b8c8 !important; margin: 5px 0 10px !important; font-size: 15px; }
+    .featured-box .featured-cta .btn {
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #ffcc00, #ff9900);
+        color: #000000;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .featured-box .featured-cta .btn:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 30px rgba(255, 204, 0, 0.2);
+    }
+    .featured-box .price-tag {
+        display: inline-block;
+        padding: 3px 16px;
+        border-radius: 50px;
+        background: rgba(255, 204, 0, 0.1);
+        border: 1px solid #ffcc00;
+        color: #ffcc00;
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+    @media (max-width: 600px) {
+        .featured-box { flex-direction: column; text-align: center; padding: 18px; }
+        .featured-box .featured-image img { max-width: 140px; }
+        .featured-box .featured-cta .btn { width: 100%; }
+    }
+    
+    /* ===== TIP BOX ===== */
+    .tip-box {
+        background: rgba(255, 204, 0, 0.03);
+        border-left: 4px solid #ffcc00;
+        padding: 16px 22px;
+        margin: 16px 0 22px;
+        border-radius: 0 10px 10px 0;
+    }
+    .tip-box p { color: #ffcc00 !important; font-size: 15px; margin: 0 !important; }
+    @media (max-width: 480px) {
+        .tip-box { padding: 14px 16px; }
+        .tip-box p { font-size: 13.5px; }
+    }
+    
+    /* ===== HORIZONTAL RULE ===== */
+    .cyber-post-wrapper hr {
+        border: none;
+        border-top: 1px solid rgba(0, 255, 136, 0.06);
+        margin: 30px 0 32px;
+        background: transparent;
+        height: 1px;
+    }
+    
+    /* ===== SHARE SECTION ===== */
+    .share-section {
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(0, 255, 136, 0.08);
+    }
+    .share-section p {
+        color: #6a7290 !important;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 16px !important;
+    }
+    .share-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .share-buttons a {
+        padding: 12px 28px;
+        border: 1px solid rgba(0, 255, 136, 0.12);
+        border-radius: 10px;
+        color: #b0b8c8 !important;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        transition: 0.3s;
+        background: transparent;
+    }
+    .share-buttons a:hover {
+        border-color: #ffcc00;
+        color: #ffcc00 !important;
+        background: rgba(255, 204, 0, 0.04);
+        transform: translateY(-2px);
+    }
+    @media (max-width: 480px) {
+        .share-buttons a { padding: 10px 18px; font-size: 13px; }
+        .share-section { margin-top: 35px; padding-top: 22px; }
+    }
+    
+    /* ===== BLOGGER OVERRIDES ===== */
+    .blog-posts { max-width: 100% !important; padding: 0 !important; }
+    .post-body { padding: 0 !important; background: #000000 !important; }
+    .post-body-content { background: #000000 !important; padding: 0 !important; }
+    .post-outer { background: #000000 !important; padding: 0 !important; margin: 0 !important; border: none !important; box-shadow: none !important; }
+    .post { background: #000000 !important; padding: 0 !important; margin: 0 !important; border: none !important; box-shadow: none !important; }
+    
+    /* ===== LINK STYLES ===== */
+    .cyber-post-wrapper a { color: #ffcc00; text-decoration: none; transition: 0.3s; }
+    .cyber-post-wrapper a:hover { color: #00ff88; text-decoration: underline; }
+    .text-center { text-align: center; }
+</style>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="cyber-post-wrapper">
+
+    <div class="cyber-content">
+
+        <!-- ===== POST HEADER ===== -->
+        <div class="post-header-cyber">
+            <div class="post-badge">🏁 CTF</div>
+            <h1 class="post-title-cyber">Complete <strong>CTF</strong> Guide</h1>
+            <p class="post-description">
+                Capture The Flag — The ultimate guide to mastering cybersecurity competitions.
+            </p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 1: INTRODUCTION -->
+        <!-- ============================================================ -->
+        <h2>1. Introduction to CTFs</h2>
+
+        <p>
+            <strong>Capture The Flag (CTF)</strong> competitions are cybersecurity challenges where participants solve puzzles to find hidden <strong>"flags"</strong> (secret strings). CTFs help develop real-world hacking skills in a legal environment.
+        </p>
+
+        <h3>Types of CTFs</h3>
+        <ul>
+            <li><strong>Jeopardy-style</strong> — Categories: Web, Crypto, Binary, Forensics</li>
+            <li><strong>Attack-Defense</strong> — Teams attack &amp; defend servers</li>
+            <li><strong>Mixed</strong> — Combination of both</li>
+        </ul>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 2: CTF CATEGORIES -->
+        <!-- ============================================================ -->
+        <h2>2. CTF Categories &amp; Tools</h2>
+
+        <h3>A. Web Exploitation</h3>
+        <p><strong>Common Vulnerabilities:</strong> SQLi, XSS, CSRF, SSRF, JWT attacks</p>
+        <p><strong>Tools:</strong> Burp Suite, OWASP ZAP, SQLmap</p>
+        <p><strong>Example Challenge:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>🌐 Web</span>
+                <span>SQL Injection</span>
+            </div>
+            <pre><code>http://ctf.site/login.php?id=1'
+<span class="comment">Find the flag by exploiting SQL injection.</span></code></pre>
+        </div>
+
+        <h3>B. Reverse Engineering</h3>
+        <p><strong>Techniques:</strong> Static analysis (Ghidra, IDA Pro), Dynamic analysis (x64dbg, GDB)</p>
+        <p><strong>Example Challenge:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>🔧 Reverse</span>
+                <span>crackme.c</span>
+            </div>
+            <pre><code><span class="comment">// crackme.c</span>
+<span class="keyword">if</span> (input == 0xDEADBEEF) print_flag();</code></pre>
+        </div>
+
+        <h3>C. Binary Exploitation</h3>
+        <p><strong>Common Attacks:</strong> Buffer overflows, ROP, Format strings</p>
+        <p><strong>Tools:</strong> Pwntools, GDB with Peda</p>
+        <p><strong>Example Challenge:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💥 Binary</span>
+                <span>Pwntools</span>
+            </div>
+            <pre><code><span class="keyword">from</span> pwn <span class="keyword">import</span> *
+p = process(<span class="string">'./vuln'</span>)
+p.sendline(cyclic(100))</code></pre>
+        </div>
+
+        <h3>D. Cryptography</h3>
+        <p><strong>Common Challenges:</strong> RSA, AES, XOR, Frequency analysis</p>
+        <p><strong>Tools:</strong> CyberChef, RsaCtfTool</p>
+        <p><strong>Example Challenge:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>🔐 Crypto</span>
+                <span>Decryption</span>
+            </div>
+            <pre><code>Ciphertext: U2FsdGVkX19zZWFzb24=
+Password: <span class="string">"password"</span></code></pre>
+        </div>
+
+        <h3>E. Forensics</h3>
+        <p><strong>Common Tasks:</strong> Memory dump analysis (Volatility), Packet analysis (Wireshark), File carving (binwalk)</p>
+        <p><strong>Example Challenge:</strong> Analyze memory.dmp to find the hacker's IP.</p>
+
+        <h3>F. Miscellaneous</h3>
+        <p>OSINT, Steganography, Programming</p>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 3: STRATEGIES -->
+        <!-- ============================================================ -->
+        <h2>3. CTF Strategies</h2>
+
+        <h3>A. General Approach</h3>
+        <ol>
+            <li><strong>Recon</strong> — Examine all provided files</li>
+            <li><strong>Research</strong> — Google keywords, similar CTFs</li>
+            <li><strong>Exploit</strong> — Use appropriate tools</li>
+            <li><strong>Submit</strong> — Flag format: <code>FLAG{...}</code></li>
+        </ol>
+
+        <h3>B. Time Management</h3>
+        <ul>
+            <li>Start with easy challenges first</li>
+            <li>Skip stuck problems after 30 mins</li>
+            <li>Collaborate with teammates (if allowed)</li>
+        </ul>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 4: HANDS-ON LABS -->
+        <!-- ============================================================ -->
+        <h2>4. Hands-On Labs Setup</h2>
+
+        <h3>A. Local Practice Environments</h3>
+        <ol>
+            <li><strong>VulnHub</strong> — Download vulnerable VMs (Metasploitable, Kioptrix)</li>
+            <li><strong>HTB (Hack The Box)</strong> — Online machines</li>
+        </ol>
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>HTB Connection</span>
+            </div>
+            <pre><code><span class="comment"># Connect via OpenVPN</span>
+<span class="cmd">openvpn</span> lab_user.ovpn</code></pre>
+        </div>
+
+        <ol start="3">
+            <li><strong>TryHackMe</strong> — Guided learning paths</li>
+        </ol>
+
+        <h3>B. Essential Tools Setup</h3>
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>Install CTF Tools</span>
+            </div>
+            <pre><code><span class="comment"># Install CTF tools on Kali</span>
+<span class="cmd">sudo apt install -y gdb peda pwntools steghide binwalk volatility</span></code></pre>
+        </div>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 5: WALKTHROUGH -->
+        <!-- ============================================================ -->
+        <h2>5. Step-by-Step CTF Walkthrough</h2>
+
+        <h3>Challenge: Web Login Bypass</h3>
+
+        <p><strong>Given:</strong></p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>🌐 Target</span>
+                <span>Web Login</span>
+            </div>
+            <pre><code>http://ctf.site/login
+Source: <span class="comment">&lt;!-- /source.php --&gt;</span></code></pre>
+        </div>
+
+        <p><strong>Steps:</strong></p>
+        <ol>
+            <li>View source → Find <code>/source.php</code></li>
+            <li>Analyze code:</li>
+        </ol>
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>📄 Source</span>
+                <span>source.php</span>
+            </div>
+            <pre><code><span class="keyword">if</span> (<span class="var">$_POST</span>[<span class="string">'password'</span>] == md5(<span class="string">'secret'</span>)) <span class="var">$flag</span> = <span class="string">"FLAG{...}"</span>;</code></pre>
+        </div>
+
+        <ol start="3">
+            <li>Generate MD5 hash:</li>
+        </ol>
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>MD5 Hash</span>
+            </div>
+            <pre><code><span class="cmd">echo -n 'secret' | md5sum</span></code></pre>
+        </div>
+
+        <ol start="4">
+            <li>Submit password hash → Get flag!</li>
+        </ol>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 6: CTF PLATFORMS -->
+        <!-- ============================================================ -->
+        <h2>6. CTF Platforms</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Type</th>
+                    <th>Difficulty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hack The Box</td>
+                    <td>Live machines</td>
+                    <td>Medium-Hard</td>
+                </tr>
+                <tr>
+                    <td>TryHackMe</td>
+                    <td>Guided labs</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>CTFtime</td>
+                    <td>Competition hub</td>
+                    <td>All levels</td>
+                </tr>
+                <tr>
+                    <td>picoCTF</td>
+                    <td>Jeopardy</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>OverTheWire</td>
+                    <td>War games</td>
+                    <td>Progressive</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 7: ADVANCED TECHNIQUES -->
+        <!-- ============================================================ -->
+        <h2>7. Advanced Techniques</h2>
+
+        <h3>A. Automating with Python</h3>
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>🐍 Python</span>
+                <span>Automation</span>
+            </div>
+            <pre><code><span class="keyword">import</span> requests
+
+<span class="keyword">for</span> i <span class="keyword">in</span> range(100):
+    r = requests.get(f'http://ctf.site?id={i}')
+    <span class="keyword">if</span> <span class="string">"FLAG{"</span> <span class="keyword">in</span> r.text:
+        print(r.text)</code></pre>
+        </div>
+
+        <h3>B. Binary Patch Exploits</h3>
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>Binary Patch</span>
+            </div>
+            <pre><code><span class="comment"># Change JZ to JNZ in binary</span>
+<span class="cmd">printf '\x75' | dd of=./binary bs=1 seek=$((0x1234)) conv=notrunc</span></code></pre>
+        </div>
+
+        <h3>C. Memory Corruption</h3>
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>🐍 Python</span>
+                <span>ROP Chain</span>
+            </div>
+            <pre><code><span class="comment"># ROP chain example</span>
+rop = ROP(<span class="string">'./binary'</span>)
+rop.call(<span class="string">'system'</span>, [<span class="string">'/bin/sh'</span>])</code></pre>
+        </div>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 8: TEAM TIPS -->
+        <!-- ============================================================ -->
+        <h2>8. CTF Team Tips</h2>
+
+        <ul>
+            <li><strong>Roles:</strong> Reverser, Web expert, Crypto specialist</li>
+            <li><strong>Communication:</strong> Discord + shared notes</li>
+            <li><strong>Knowledge Sharing:</strong> Writeups after events</li>
+        </ul>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 9: POST-CTF LEARNING -->
+        <!-- ============================================================ -->
+        <h2>9. Post-CTF Learning</h2>
+
+        <ol>
+            <li>Read writeups for unsolved challenges</li>
+            <li>Recreate challenges for deeper understanding</li>
+            <li>Build your own CTFs (CTFd framework)</li>
+        </ol>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 10: FREE PRACTICE RESOURCES -->
+        <!-- ============================================================ -->
+        <h2>10. Free Practice Resources</h2>
+
+        <ol>
+            <li><strong>picoCTF</strong> — Beginner-friendly</li>
+            <li><strong>OverTheWire Bandit</strong> — Linux skills</li>
+            <li><strong>Cryptopals</strong> — Crypto challenges</li>
+            <li><strong>MalwareTech Challenges</strong> — Beginner RE</li>
+        </ol>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 11: CONCLUSION -->
+        <!-- ============================================================ -->
+        <h2>Conclusion</h2>
+
+        <ul>
+            <li>CTFs are the <strong>best way</strong> to practice real-world hacking</li>
+            <li>Start with easy challenges and progress gradually</li>
+            <li>Learn from failures — every CTF improves skills</li>
+        </ul>
+
+        <h3>🔹 Next Steps</h3>
+
+        <ul>
+            <li><a href="https://www.cybersume.xyz/2025/03/kali-linux-tools.html" target="_blank">Learn About Kali Linux Tools</a></li>
+            <li><a href="https://www.cybersume.xyz/2025/03/programming-languages.html" target="_blank">Programming Languages for Ethical Hacking</a></li>
+            <li><a href="https://www.cybersume.xyz/2025/03/kali-linux-complete-tutorial.html" target="_blank">Practice on Kali Linux Operating System</a></li>
+        </ul>
+
+        <ol>
+            <li>Create free account on HTB/TryHackMe</li>
+            <li>Join CTFtime.org for upcoming events</li>
+            <li>Solve picoCTF 2024 challenges</li>
+        </ol>
+
+        <div class="tip-box">
+            <p>🚀 Want a curated list of beginner CTFs? Here's my recommended starting path:</p>
+        </div>
+
+        <ol>
+            <li>OverTheWire Bandit (Linux)</li>
+            <li>picoCTF (General)</li>
+            <li>HTB Starting Point</li>
+            <li>NahamCon CTF</li>
+        </ol>
+
+        <div class="tip-box">
+            <p>😊 Would you like personalized challenge recommendations based on your skill level?</p>
+        </div>
+
+        <hr/>
+
+        <!-- ===== SHARE SECTION ===== -->
+        <div class="share-section">
+            <p>📤 Share this comprehensive CTF guide with your network</p>
+            <div class="share-buttons">
+                <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Complete%20CTF%20Guide%20-%20Master%20Capture%20The%20Flag%20Competitions!%20%23CTF%20%23CyberSecurity%20%23Hacking','_blank');return false;">
+                    🐦 Twitter
+                </a>
+                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    📘 Facebook
+                </a>
+                <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    💼 LinkedIn
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
